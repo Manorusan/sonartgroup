@@ -1,1 +1,1 @@
-Sube todos los archivos al repositorio GitHub 'sonartgroup' y reemplaza los existentes.
+Sube TODO el contenido al repositorio GitHub 'sonartgroup' y reemplaza los archivos existentes.

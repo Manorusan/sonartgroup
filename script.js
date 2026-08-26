@@ -1,1 +1,1 @@
-// Sonart V2
+// V2 Deluxe
