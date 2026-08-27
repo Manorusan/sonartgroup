@@ -1,1 +1,1 @@
-// V2 Deluxe
+console.log('Sonart Founders Edition');
