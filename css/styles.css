@@ -47,3 +47,6 @@ body{
     text-decoration:none;
     margin-left:12px;
 }
+html{
+    scroll-behavior:smooth;
+}
