@@ -1,16 +1,67 @@
-body{
+/* ===========================
+   SONART GROUP BUILD 001
+   Founder Edition
+=========================== */
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
     font-family:Arial, Helvetica, sans-serif;
     background:#0A0A0A;
-    color:white;
+    color:#FFFFFF;
+    overflow-x:hidden;
 }
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 50px;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(12px);
+    z-index:999;
+}
+
+.logo{
+    color:#D4AF37;
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+nav div:last-child{
+    display:flex;
+    gap:30px;
+    color:#D4AF37;
+    font-weight:600;
+    font-size:15px;
+}
+
+/* ===========================
+   HERO
+=========================== */
 
 .hero{
     height:100vh;
     background:
-    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)),
-    url("../images/hero-bg.jpg");
-
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)),
+        url("../images/hero-bg.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -21,32 +72,199 @@ body{
     text-align:center;
 }
 
-.hero-overlay{max-width:900px;}
+.hero-overlay{
+    width:90%;
+    max-width:900px;
+}
 
 .hero h1{
     color:#D4AF37;
-    font-size:72px;
-    margin:0;
+    font-size:82px;
+    margin-bottom:12px;
+    letter-spacing:2px;
 }
 
-.hero h2{font-size:48px;}
+.hero h2{
+    font-size:54px;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
 
 .btn-gold{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width:250px;
+    height:60px;
+
     background:#D4AF37;
-    color:#111;
-    padding:16px 30px;
-    border-radius:8px;
+    color:#111111;
+
+    border-radius:10px;
     text-decoration:none;
+    font-weight:700;
+    font-size:17px;
+
+    transition:.35s ease;
+}
+
+.btn-gold:hover{
+    transform:translateY(-3px);
+    background:#E4C65B;
 }
 
 .btn-outline{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width:220px;
+    height:60px;
+
     border:1px solid #D4AF37;
     color:#D4AF37;
-    padding:16px 30px;
-    border-radius:8px;
+
+    border-radius:10px;
     text-decoration:none;
-    margin-left:12px;
+    font-weight:700;
+    font-size:17px;
+
+    transition:.35s ease;
 }
-html{
-    scroll-behavior:smooth;
+
+.btn-outline:hover{
+    background:#D4AF37;
+    color:#111111;
+}
+
+/* ===========================
+   MANIFIESTO
+=========================== */
+
+section{
+    padding:100px 9%;
+}
+
+#manifiesto h2{
+    color:#D4AF37;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+#manifiesto p{
+    font-size:20px;
+    line-height:1.8;
+    max-width:900px;
+}
+
+/* ===========================
+   COLECCIONES
+=========================== */
+
+.collections{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:28px;
+    margin-top:40px;
+}
+
+.card{
+    background:#121212;
+    border:1px solid rgba(212,175,55,.45);
+    border-radius:16px;
+    padding:28px;
+    transition:.35s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#D4AF37;
+}
+
+.card h3{
+    color:#D4AF37;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.card p{
+    margin-bottom:14px;
+    color:#DDDDDD;
+}
+
+.price{
+    color:#FFFFFF;
+    font-size:24px;
+    font-weight:700;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    border-top:1px solid rgba(212,175,55,.25);
+    text-align:center;
+    padding:45px 20px;
+    color:#D4AF37;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    nav{
+        padding:18px 20px;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav div:last-child{
+        gap:18px;
+        font-size:13px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .hero h2{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-gold,
+    .btn-outline{
+        width:100%;
+        max-width:320px;
+    }
+
 }
