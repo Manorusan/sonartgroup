@@ -1,7 +1,7 @@
-/* ===========================
-   SONART GROUP BUILD 001
-   Founder Edition
-=========================== */
+/* =====================================
+   SONART GROUP LLC
+   Founder Edition · Build 001
+===================================== */
 
 *{
     margin:0;
@@ -14,15 +14,15 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     background:#0A0A0A;
     color:#FFFFFF;
     overflow-x:hidden;
 }
 
-/* ===========================
-   NAVBAR
-=========================== */
+/* ==========================
+        NAVBAR
+========================== */
 
 nav{
     position:fixed;
@@ -32,36 +32,46 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:22px 50px;
-    background:rgba(0,0,0,.35);
+    padding:22px 60px;
+    background:rgba(0,0,0,.28);
     backdrop-filter:blur(12px);
     z-index:999;
 }
 
 .logo{
     color:#D4AF37;
-    font-size:26px;
+    font-size:24px;
     font-weight:700;
     letter-spacing:1px;
 }
 
-nav div:last-child{
+.menu{
     display:flex;
-    gap:30px;
-    color:#D4AF37;
-    font-weight:600;
-    font-size:15px;
+    gap:28px;
 }
 
-/* ===========================
-   HERO
-=========================== */
+.menu a{
+    color:#E5C96E;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:white;
+}
+
+/* ==========================
+          HERO
+========================== */
 
 .hero{
     height:100vh;
+
     background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)),
-        url("../images/hero-bg.jpg");
+    linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.65)),
+    url("../images/hero-bg.jpg");
+
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -79,24 +89,26 @@ nav div:last-child{
 
 .hero h1{
     color:#D4AF37;
-    font-size:82px;
-    margin-bottom:12px;
+    font-size:78px;
     letter-spacing:2px;
+    margin-bottom:10px;
 }
 
 .hero h2{
-    font-size:54px;
+    font-size:48px;
+    font-weight:300;
     margin-bottom:18px;
 }
 
 .hero p{
     font-size:22px;
+    color:#F3F3F3;
     margin-bottom:40px;
 }
 
-/* ===========================
-   BOTONES
-=========================== */
+/* ==========================
+        BOTONES
+========================== */
 
 .hero-buttons{
     display:flex;
@@ -106,12 +118,12 @@ nav div:last-child{
 }
 
 .btn-gold{
-    display:inline-flex;
+    display:flex;
     justify-content:center;
     align-items:center;
 
-    min-width:250px;
-    height:60px;
+    width:250px;
+    height:58px;
 
     background:#D4AF37;
     color:#111111;
@@ -119,23 +131,22 @@ nav div:last-child{
     border-radius:10px;
     text-decoration:none;
     font-weight:700;
-    font-size:17px;
 
-    transition:.35s ease;
+    transition:.35s;
 }
 
 .btn-gold:hover{
+    background:#E6C95E;
     transform:translateY(-3px);
-    background:#E4C65B;
 }
 
 .btn-outline{
-    display:inline-flex;
+    display:flex;
     justify-content:center;
     align-items:center;
 
-    min-width:220px;
-    height:60px;
+    width:220px;
+    height:58px;
 
     border:1px solid #D4AF37;
     color:#D4AF37;
@@ -143,53 +154,54 @@ nav div:last-child{
     border-radius:10px;
     text-decoration:none;
     font-weight:700;
-    font-size:17px;
 
-    transition:.35s ease;
+    transition:.35s;
 }
 
 .btn-outline:hover{
     background:#D4AF37;
     color:#111111;
+    transform:translateY(-3px);
 }
 
-/* ===========================
-   MANIFIESTO
-=========================== */
+/* ==========================
+      MANIFIESTO
+========================== */
 
 section{
-    padding:100px 9%;
+    padding:100px 8%;
 }
 
-#manifiesto h2{
+section h2{
     color:#D4AF37;
-    font-size:40px;
-    margin-bottom:20px;
+    font-size:42px;
+    margin-bottom:22px;
 }
 
-#manifiesto p{
-    font-size:20px;
-    line-height:1.8;
+section p{
     max-width:900px;
+    line-height:1.8;
+    font-size:20px;
 }
 
-/* ===========================
-   COLECCIONES
-=========================== */
+/* ==========================
+      COLECCIÓN
+========================== */
 
 .collections{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:28px;
-    margin-top:40px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+    margin-top:35px;
 }
 
 .card{
     background:#121212;
-    border:1px solid rgba(212,175,55,.45);
+    border:1px solid rgba(212,175,55,.35);
     border-radius:16px;
     padding:28px;
-    transition:.35s ease;
+
+    transition:.35s;
 }
 
 .card:hover{
@@ -199,72 +211,72 @@ section{
 
 .card h3{
     color:#D4AF37;
-    margin-bottom:12px;
+    margin-bottom:10px;
     font-size:24px;
 }
 
 .card p{
-    margin-bottom:14px;
     color:#DDDDDD;
+    margin-bottom:16px;
+    font-size:16px;
 }
 
 .price{
-    color:#FFFFFF;
+    color:white;
     font-size:24px;
     font-weight:700;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/* ==========================
+         FOOTER
+========================== */
 
 footer{
-    border-top:1px solid rgba(212,175,55,.25);
+    border-top:1px solid rgba(212,175,55,.2);
     text-align:center;
-    padding:45px 20px;
+    padding:40px;
     color:#D4AF37;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* ==========================
+       RESPONSIVE
+========================== */
 
 @media(max-width:768px){
 
-    nav{
-        padding:18px 20px;
-        flex-direction:column;
-        gap:10px;
-    }
+nav{
+    padding:18px 20px;
+    flex-direction:column;
+    gap:10px;
+}
 
-    nav div:last-child{
-        gap:18px;
-        font-size:13px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+.menu{
+    gap:16px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
-    .hero h1{
-        font-size:46px;
-    }
+.hero h1{
+    font-size:42px;
+}
 
-    .hero h2{
-        font-size:34px;
-    }
+.hero h2{
+    font-size:30px;
+}
 
-    .hero p{
-        font-size:18px;
-    }
+.hero p{
+    font-size:18px;
+}
 
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
 
-    .btn-gold,
-    .btn-outline{
-        width:100%;
-        max-width:320px;
-    }
+.btn-gold,
+.btn-outline{
+    width:100%;
+    max-width:320px;
+}
 
 }
