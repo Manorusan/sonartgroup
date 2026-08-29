@@ -65,30 +65,66 @@ body{
     border-radius:8px;
     text-decoration:none;
 }
-/* BOTONES DEL HERO */
+/* BOTONES PREMIUM */
 
 .hero-buttons{
     display:flex;
     justify-content:center;
-    gap:16px;
-    margin-top:32px;
+    align-items:center;
+    gap:18px;
+    margin-top:35px;
     flex-wrap:wrap;
 }
 
 .btn-gold{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:240px;
+    height:58px;
+
     background:#D4AF37;
     color:#111;
-    padding:16px 34px;
+
     border-radius:10px;
     text-decoration:none;
     font-weight:700;
-    transition:.3s;
+    font-size:17px;
+
+    transition:all .35s ease;
+    box-shadow:0 8px 30px rgba(212,175,55,.18);
 }
 
 .btn-gold:hover{
-    background:#E5C96E;
-    transform:translateY(-2px);
+    transform:translateY(-3px);
+    background:#E3C45A;
+    box-shadow:0 14px 35px rgba(212,175,55,.35);
+}
+
+.btn-outline{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:210px;
+    height:58px;
+
+    border:1px solid #D4AF37;
+    color:#D4AF37;
+
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:17px;
+
+    transition:all .35s ease;
+}
+
+.btn-outline:hover{
+    background:#D4AF37;
+    color:#111;
+    transform:translateY(-3px);
 }
 
 .btn-outline{
