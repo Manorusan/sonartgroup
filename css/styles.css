@@ -20,47 +20,55 @@ body{
     overflow-x:hidden;
 }
 
-/* ==========================
-        NAVBAR
-========================== */
+/* NAVBAR PREMIUM */
 
-nav{
+#navbar{
     position:fixed;
     top:0;
     left:0;
     width:100%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:22px 60px;
-    background:rgba(0,0,0,.28);
-    backdrop-filter:blur(12px);
+
+    background:rgba(0,0,0,.12);
+    backdrop-filter:blur(14px);
+
+    transition:.35s ease;
+
     z-index:999;
 }
 
-.logo{
+#navbar.scrolled{
+    background:#0A0A0A;
+    box-shadow:0 6px 25px rgba(0,0,0,.35);
+}
+
+.logo span{
     color:#D4AF37;
-    font-size:24px;
+    font-size:34px;
     font-weight:700;
     letter-spacing:1px;
 }
 
 .menu{
     display:flex;
-    gap:28px;
+    gap:30px;
 }
 
 .menu a{
-    color:#E5C96E;
+    color:#F3D67A;
     text-decoration:none;
-    font-size:15px;
+    font-weight:600;
     transition:.3s;
 }
 
 .menu a:hover{
     color:white;
 }
-
 /* ==========================
           HERO
 ========================== */
